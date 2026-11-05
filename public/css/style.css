@@ -1,0 +1,231 @@
+
+/* Tampilan dasar */
+body {
+    margin: 0;
+    background-color: #1C211C;
+    color: #F0E6D2;
+    font-family: Arial, sans-serif;
+}
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+h1 {
+    color: #C5A66D;
+}
+main a {
+    color: #C5A66D;
+    text-decoration: none;
+}
+main a:hover {
+    color: #F0E6D2;
+    text-decoration: underline;
+}
+
+/* Navbar */
+nav {
+    background-color: #252C25;
+    padding: 20px 30px;
+}
+nav h2 {
+    color: #C5A66D;
+}
+nav a {
+    color: #F0E6D2;
+    margin-right: 20px;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #C5A66D;
+}
+
+/* Footer */
+footer {
+    background-color: #252C25;
+    padding: 20px 30px;
+    border-top: 1px solid #454F3C;
+}
+footer p {
+    color: #C9C9BC;
+}
+
+/* Form */
+input {
+    padding: 10px;
+    background-color: #F0E6D2;
+    border: 1px solid #C5A66D;
+    border-radius: 5px;
+}
+button {
+    padding: 10px 20px;
+    background-color: #C5A66D;
+    color: #1C211C;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #F0E6D2;
+}
+
+/* Halaman Login */
+.login-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 30px auto;
+}
+.login-teks {
+    flex: 1;
+}
+.foto-tiger {
+    flex: 1;
+    margin: 0;
+    text-align: center;
+}
+.foto-tiger img {
+    width: 100%;
+    max-width: 550px;
+    height: 480px;
+    object-fit: cover;
+    object-position: center 40%;
+    border-radius: 15px;
+    border: 2px solid #454F3C;
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 360px;
+}
+.login-form input {
+    width: 100%;
+    box-sizing: border-box;
+}
+.login-form button {
+    width: 100%;
+    font-size: 16px;
+}
+
+/* Kartu Dashboard & Profile */
+.motor-dashboard,
+.kartu-profile {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background-color: #252C25;
+    padding: 20px;
+    border: 1px solid #454F3C;
+    border-radius: 10px;
+}
+.motor-dashboard {
+    margin: 25px 0;
+}
+.motor-dashboard div {
+    flex: 1;
+}
+.motor-dashboard img {
+    width: 48%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Ringkasan pemeliharaan */
+.ringkasan-servis {
+    background-color: #252C25;
+    border: 1px solid #454F3C;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+.ringkasan-servis h3 {
+    color: #C5A66D;
+}
+
+/* Halaman Profile */
+.kartu-profile {
+    margin: 20px 0;
+}
+.data-profile,
+.kartu-profile .foto-profile {
+    flex: 1;
+}
+.foto-profile {
+    margin: 25px 0;
+}
+.foto-profile img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #454F3C;
+}
+.kartu-profile .foto-profile {
+    margin: 0;
+}
+.kartu-profile .foto-profile img {
+    max-width: 100%;
+}
+
+/* Tabel Pengelolaan */
+.tabel-area {
+    width: 100%;
+    overflow-x: auto;
+    margin: 25px 0;
+}
+.tabel-servis {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #252C25;
+}
+.tabel-servis th,
+.tabel-servis td {
+    padding: 15px;
+    border: 1px solid #454F3C;
+    text-align: left;
+}
+.tabel-servis th {
+    background-color: #454F3C;
+    color: #C5A66D;
+}
+.tabel-servis tr:hover {
+    background-color: #303A30;
+}
+
+/* Tampilan pada HP */
+@media (max-width: 700px) {
+    nav {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        gap: 12px 24px;
+        padding: 20px;
+    }
+    nav h2 {
+        grid-column: 1 / 3;
+        margin: 0 0 5px;
+    }
+    nav a {
+        margin-right: 0;
+    }
+    .login-container {
+        flex-direction: column;
+    }
+    .login-teks,
+    .foto-tiger {
+        width: 100%;
+    }
+    .foto-tiger img {
+        height: 320px;
+    }
+    .motor-dashboard,
+    .kartu-profile {
+        flex-direction: column;
+    }
+    .motor-dashboard img {
+        width: 100%;
+    }
+    .kartu-profile {
+        align-items: stretch;
+    }
+}
