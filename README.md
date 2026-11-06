@@ -1,6 +1,6 @@
 # TigerLog - Jurnal Perawatan Motor Klasik
 
-TigerLog adalah website sederhana yang saya buat untuk tugas UTS Praktikum Pemrograman Web. Website ini berisi informasi Honda Tiger 2000 tahun 1996 milik saya beserta contoh catatan perawatannya.
+TigerLog adalah website sederhana yang saya ciptakan untuk tugas UTS Praktikum Pemrograman Web. Website ini berisi informasi Honda Tiger 2000 tahun 1996 milik saya beserta contoh catatan pemeliharaannya.
 
 Saya menggunakan tema Retro Garage dengan perpaduan warna hijau gelap dan emas agar sesuai dengan karakter motor klasik.
 
@@ -8,10 +8,10 @@ Saya menggunakan tema Retro Garage dengan perpaduan warna hijau gelap dan emas a
 
 TigerLog memiliki empat halaman utama:
 
-1. **Login** - Memasukkan username untuk menuju Dashboard.
-2. **Dashboard** - Menampilkan sapaan pengguna, informasi motor, dan jumlah catatan servis.
+1. **Login** - Memasukkan username untuk menuju ke Dashboard.
+2. **Dashboard** - Menampilkan welcome (sapaan) pengguna, informasi motor, dan jumlah catatan servis.
 3. **Profile** - Menampilkan informasi pemilik dan foto Honda Tiger.
-4. **Pengelolaan** - Menampilkan daftar perawatan motor dalam bentuk tabel.
+4. **Pengelolaan** - Menampilkan daftar pemeliharaan motor dalam bentuk tabel.
 
 ## Screenshot Website
 
@@ -32,12 +32,12 @@ TigerLog memiliki empat halaman utama:
 - HTML dan CSS untuk membuat tampilan website.
 - PHP dan Laravel 13 untuk menjalankan aplikasi.
 - Blade Template untuk mengatur tampilan halaman.
-- Array PHP untuk menyimpan contoh data perawatan.
+- Array PHP untuk menyimpan contoh data pemeliharaan.
 
 ## Cara Menjalankan
 
 1. Pastikan PHP dan Composer sudah tersedia.
-2. Buka terminal pada folder proyek TigerLog.
+2. Buka terminal pada folder projek TigerLog.
 3. Jalankan `composer install`.
 4. Salin `.env.example` menjadi `.env` dengan perintah `copy .env.example .env` pada Windows.
 5. Atur `SESSION_DRIVER=file` dan `CACHE_STORE=file` pada `.env`.
@@ -49,7 +49,7 @@ TigerLog memiliki empat halaman utama:
 
 Website ini belum menggunakan database maupun fitur CRUD. Data servis masih berupa array PHP di Controller, sedangkan halaman Login hanya menerima username melalui Request dan bukan sistem login akun.
 
-Proyek ini dibuat untuk mempraktikkan penggunaan Route, Controller, Request, Blade, HTML, dan CSS yang sudah dipelajari.
+Projek ini dibuat untuk mempraktikkan penggunaan Route, Controller, Request, Blade, HTML, dan CSS yang sudah dipelajari.
 
 ---
 
