@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>Catatan Perawatan TigerLog</h1>
+    <h1>Catatan Pemeliharaan TigerLog</h1>
     <p>Halo, {{ $username }}!</p>
     <p>Berikut adalah daftar pemeliharaan motor klasik.</p>
 

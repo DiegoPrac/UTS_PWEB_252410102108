@@ -1,6 +1,6 @@
 <footer>
     <hr>
-    <p>TigerLog - Jurnal Perawatan Motor Klasik</p>
-    <p>Dibuat untuk pecinta motor lawas.</p>
+    <p>TigerLog - Jurnal Pemeliharaan Motor Klasik</p>
+    <p>Diciptakan untuk pecinta motor lawas.</p>
     <p>&copy; 2026 TigerLog</p>
 </footer>

@@ -3,11 +3,11 @@
 @section('content')
     <h1>Dashboard TigerLog</h1>
     <h2>Selamat datang di garasi, {{ $username }}!</h2>
-    <p>Di sini kamu bisa melihat jurnal pemeliharaan motor klasik.</p>
+    <p>Di sini kamu bisa melihat jurnal pemeliharaan motor klasikmu.</p>
 
     @include('partials.info')
     <div class="ringkasan-servis">
-        <h3>Ringkasan Perawatan</h3>
+        <h3>Ringkasan Pemeliharaan</h3>
         <p>Jumlah catatan servis: {{ $jumlahServis }}</p>
     </div>
 
@@ -26,7 +26,7 @@
     <a href="/profile?username={{ urlencode($username) }}">Lihat Profile</a>
     <p>
         <a href="/pengelolaan?username={{ urlencode($username) }}">
-            Lihat Catatan Perawatan
+            Lihat Catatan Pemeliharaan
         </a>
     </p>
     <p><a href="/">Kembali ke Login</a></p>
